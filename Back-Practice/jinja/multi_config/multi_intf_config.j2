@@ -1,0 +1,7 @@
+
+{% for data in data_list %}
+interface {{data["intf_name"]}}
+description {{data["desc"]}}
+speed {{data["speed"]}}
+duplex {{data["duplex"]}}
+{% endfor %}

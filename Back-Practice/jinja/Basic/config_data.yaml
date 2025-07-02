@@ -1,0 +1,6 @@
+---
+intf_name: Gi0/1
+desc: Connected to Core Switch
+speed: 100
+duplex: Full
+
