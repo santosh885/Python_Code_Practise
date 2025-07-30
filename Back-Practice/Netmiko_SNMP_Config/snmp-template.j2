@@ -1,0 +1,4 @@
+snmp-server community {{ snmp_data.snmp_community }} RO
+snmp-server location {{ snmp_data.snmp_location }}
+snmp-server contact {{ snmp_data.snmp_contact }}
+snmp-server host {{ snmp_data.snmp_server_ip }} version {{ snmp_data.snmp_version }} {{ snmp_data.snmp_community }}

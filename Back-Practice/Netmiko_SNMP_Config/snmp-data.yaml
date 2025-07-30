@@ -1,0 +1,7 @@
+snmp_community: public
+snmp_location: Banglore Office
+snmp_contact: admin@gmail.com 
+snmp_server_ip: 192.168.100.10
+snmp_version: 2c
+
+
