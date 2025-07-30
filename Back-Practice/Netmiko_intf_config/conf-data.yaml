@@ -1,0 +1,20 @@
+---
+- intf_name : fastethernet 0/1
+  desc: connected to server1
+  duplex: full
+  speed: 100
+
+- intf_name : Fastethernet 1/0
+  desc: connected to server2
+  duplex: full
+  speed: 100
+
+- intf_name: Fastethernet 2/0
+  desc : connected to server3
+  duplex: full
+  speed: 100
+  
+     
+
+
+
