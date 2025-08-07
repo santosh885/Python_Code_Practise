@@ -1,0 +1,23 @@
+snmp: 
+  location: DC 
+  contact: admin@company.com
+  community: public
+
+ntp: 
+  servers: 
+    - 192.168.100.12
+    - 192.168.100.13
+
+access_list: 
+  name: ACL-IN 
+  rules: 
+    - permit ip 192.168.1.0 0.0.0.255 any
+    - deny ip any any
+
+
+     
+        
+ 
+
+
+    

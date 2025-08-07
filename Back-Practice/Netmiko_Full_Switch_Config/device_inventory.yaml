@@ -1,0 +1,8 @@
+inventory: 
+  - name: Mumbai-R1
+    host: 192.168.1.17
+    geo_location: Asia
+
+  - name: London-R1
+    host: 192.168.1.18
+    geo_location: EU

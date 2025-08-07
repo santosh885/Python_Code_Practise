@@ -1,0 +1,32 @@
+hostname {{ hostname }}
+!
+! SNMP Configuration 
+snmp-server location {{ snmp.location }}
+snmp-server contact {{ snmp.contact }}
+snmp-server community {{ snmp.community }} RO
+!
+
+! Access_list Configuration
+ip access-list standard {{ access_list.name }}
+{% for rule in access_list.rules %}
+ {{ rule }}
+{% endfor %}
+!
+
+! Vlan Configuration 
+{% for name , vlan in vlans.items() %}
+interface vlan {{ vlan.id }}
+ description {{ name | capitalize }} VLAN
+ ip address {{ vlan.ip }} {{ vlan.mask }}
+ no shutdown
+!
+{% endfor %}
+!
+
+! NTP Servers
+{% for server in ntp.servers %}
+ntp server {{ server }}
+{% endfor %}
+!
+
+end
