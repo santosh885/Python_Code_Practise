@@ -1,0 +1,11 @@
+stages:
+  - monitor
+
+interface_check:
+  stage: monitor
+  image: python:3.9
+  script:
+    - pip install requests
+    - python interface_status.py
+  only:
+    - schedules
